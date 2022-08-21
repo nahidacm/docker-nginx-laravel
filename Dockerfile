@@ -1,3 +1,6 @@
-FROM nahidacm/nginx-php:8.1
+FROM nahidacm/nginx-php81:latest
 
 ENV WEB_ROOT=/var/www/html/public
+
+# Define working directory.
+WORKDIR ${WEB_ROOT}
